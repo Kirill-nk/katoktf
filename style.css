@@ -82,6 +82,23 @@ img.main-photo {
     box-sizing: border-box;
 }
 
+/* Адаптивные карты Яндекса */
+.map-responsive {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px; /* Ограничиваем максимальную ширину на ПК */
+    margin: 0 auto 20px auto; /* Центрируем на ПК и делаем отступ снизу */
+    padding: 0 15px; /* <-- ВОТ ЭТО добавляет рамки по краям */
+    box-sizing: border-box; /* Чтобы padding не увеличивал общую ширину */
+}
+
+.map-responsive iframe {
+    display: block;
+    width: 100% !important; /* Карта будет занимать 100% от ширины МИНУС отступы */
+    border: none;
+    border-radius: 8px; /* (Опционально) Скругляем углы у самой карты, чтобы было современнее */
+}
 
 /* ============================================================
    6. Текст (вместо <font>)
