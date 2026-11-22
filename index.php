@@ -2,6 +2,7 @@
 <?php include 'header.php'; /* подключаем шапку */ ?>
 
 <!-- === ОСНОВНОЙ ТЕКСТ ГЛАВНОЙ === -->
+<div class="today-block">
 Сегодня:
 <?php
 // Вывод текущей даты на русском
@@ -13,7 +14,7 @@ $year = $today['year'];
 echo "$mday $month $year";
 echo "г.";
 ?>
-
+</div>
 <br><br>
 
 <!-- Блок объявления -->
@@ -26,10 +27,14 @@ echo "г.";
 <!-- Слайдер для ПК (листается свайпом) -->
 <div id="home-display" class="stepcarousel">
     <div class="slides clearfix">
-        <div class="slide"><img src="glavn1.jpeg" alt="Каток на Запсибе" /></div>
-        <div class="slide"><img src="slider/02.jpeg" alt="Каток на Запсибе" /></div>
-        <div class="slide"><img src="slider/03.jpeg" alt="Каток на Запсибе" /></div>
-        <div class="slide"><img src="slider/04.jpeg" alt="Каток на Запсибе" /></div>
+        <div class="slide"><img src="slider/12_katok.jpg" alt="Каток на Запсибе" /></div>
+        <div class="slide"><img src="slider/13_katok.jpg" alt="Каток на Запсибе" /></div>
+        <div class="slide"><img src="slider/17_katok.jpg" alt="Каток на Запсибе" /></div>
+        <div class="slide"><img src="slider/19_katok.jpg" alt="Каток на Запсибе" /></div>
+        <div class="slide"><img src="slider/16_katok.jpg" alt="Каток на Запсибе" /></div>
+        <div class="slide"><img src="slider/1_katok.jpg" alt="Каток на Запсибе" /></div>
+        <div class="slide"><img src="slider/2_katok.jpg" alt="Каток на Запсибе" /></div>
+        <div class="slide"><img src="slider/24_katok.jpg" alt="Каток на Запсибе" /></div>
     </div>
 </div>
 

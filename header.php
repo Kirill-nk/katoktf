@@ -63,7 +63,12 @@
                 <a href="galery.php">Галерея</a>
             </li>
             
-			<!--Правила катания-->
+			<!--Прокат-->
+			<li class="<?= ($page == 'rent.php') ? 'abc' : '' ?>">
+                <a href="rent.php">Прокат</a>
+            </li>
+            
+			<!--Правила-->
 			<li class="<?= ($page == 'rules.php') ? 'abc' : '' ?>">
                 <a href="rules.php">Правила</a>
             </li>
