@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+/* ============================================================
+   1. Глобальный сброс
+   ============================================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================================
+   2. Базовые настройки страницы
+   ============================================================ */
+html, body {
+  width: 100%;
+  font-size: 16px;
+  background-color: #CCCCCC;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ============================================================
+   3. Контейнер контента — адаптивный
+   ============================================================ */
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  background: #e4f6fb;
+}
+
+/* ============================================================
+   4. Таблицы
+   - сама таблица остаётся таблицей (border-collapse работает)
+   - горизонтальный скролл — на обёртке .table-wrap
+   ============================================================ */
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 15px auto;
+}
+
+.info-table {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  word-break: break-word;
+}
+
+/* ============================================================
+   5. Картинка
+   ============================================================ */
+img.main-photo {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* ============================================================
+   6. Текст (вместо <font>)
+   ============================================================ */
+.notice-title {
+  color: #043a8a;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  font-weight: normal;
+}
+
+.notice-text {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+/* ============================================================
+   7. Меню
+   - десктоп: горизонтальная строка, фиксированная высота 55px
+   - мобильный: вертикальная колонка, высота auto (см. @media)
+   ============================================================ */
+.menu {
+  width: 100%;
+  height: 55px;
+  background: url(images/menu.png) repeat-x;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul {
+  list-style: none;
+  width: 100%;
+  height: 55px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul li {
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+.menu ul li a {
+  display: block;
+  height: 54px;
+  line-height: 54px;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.menu ul li a:hover {
+  color: #000000;
+  background: #e4f6fb;
+}
+
+/* Активный пункт — специфичность выше, чем .menu ul li a */
+.menu ul li.abc a {
+  color: #000000;
+  background: #e4f6fb;
+}
+
+/* ============================================================
+   8. Контейнер и шапка
+   ============================================================ */
+#maincontent {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  border: 1px solid #000000;
+}
+
+#head {
+  background: url(images/header.png) center / cover no-repeat;
+  height: 338px;
+  width: 100%;
+}
+
+/* ============================================================
+   9. Декоративные блоки — на десктопе в потоке, на мобильном скрыты
+   ============================================================ */
+#home-display,
+.display-img,
+.display-text,
+.overlay1,
+.overlay2,
+.overlay3,
+.overlay4 {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  position: static;
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================================
+   10. Заголовки и текст
+   ============================================================ */
+h1 {
+  color: #ff0000;
+  font-family: serif;
+  font-size: 1.2rem;
+}
+
+h2 {
+  color: Blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  color: Maroon;
+  font-size: 1.5rem;
+  font-family: serif;
+}
+
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: Black;
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+p.rules {
+  margin-left: 40px;
+}
+
+/* ============================================================
+   11. Утилиты
+   ============================================================ */
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.spacer-220 {
+  height: 220px;
+}
+
+/* ============================================================
+   12. МОБИЛЬНАЯ ВЕРСИЯ (≤ 768px)
+   Здесь только отличия от десктопа. На ПК эти правила не работают.
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* Контейнер: убираем лишние отступы, чтобы не было горизонтального скролла */
+  #maincontent {
+    border-left: none;
+    border-right: none;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  /* Меню: вертикальная колонка */
+  .menu {
+    height: auto;
+    background: #6699ff; /* фоновая картинка repeat-x на высоком блоке смотрится плохо */
+  }
+
+  .menu ul {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .menu ul li {
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000000;
+  }
+
+  .menu ul li a {
+    height: auto;
+    line-height: 1.4;
+    padding: 12px 14px;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  /* Шапка: уменьшаем высоту, чтобы не занимала пол-экрана */
+  #head {
+    height: 180px;
+  }
+
+  /* Фото: без больших отступов */
+  img.main-photo {
+    margin: 10px auto;
+  }
+
+  /* Таблицы: компактнее */
+  .info-table th,
+  .info-table td {
+    padding: 6px 4px;
+    font-size: 14px;
+  }
+
+  /* Скрываем декоративные блоки, которые ломают вёрстку */
+  #home-display,
+  .display-img,
+  .display-text,
+  .overlay1,
+  .overlay2,
+  .overlay3,
+  .overlay4 {
+    display: none;
+  }
+
+  /* Убираем пустой блок-распорку на мобильном */
+  .spacer-220 {
+    display: none;
+  }
+}
+
+/* ============================================================
+   13. ОЧЕНЬ УЗКИЕ ЭКРАНЫ (≤ 380px)
+   ============================================================ */
+@media (max-width: 380px) {
+
+  .content {
+    padding: 6px;
+  }
+
+  .menu ul li a {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .info-table th,
+  .info-table td {
+    font-size: 12px;
+    padding: 4px 3px;
+  }
+
+  #head {
+    height: 140px;
+  }
+}
