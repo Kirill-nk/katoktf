@@ -2,10 +2,13 @@
 
 <p>Для проезда на каток в навигаторе напишите: "Каток на Записбе на площади мероприятий"<br><br></p>
 
+
 <div align="center">
 <div id="sxema">
-
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7562515a09506cfe3e659cbaaf9e2a0eeec5b78855a913ad75bd354ec9c70f97&amp;width=1037&amp;height=718&amp;lang=ru_RU&amp;scroll=true"></script>
+<!--
 <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=9CtzkDz2I7QtcJZKpz1Pa8RLyWFC0aC8&width=600&height=500&lang=ru_RU&sourceType=constructor"></script>
+-->
 <br/>
 <br>
 

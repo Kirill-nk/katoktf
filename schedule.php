@@ -7,6 +7,27 @@
 
     <h2>Режим работы катка</h2>
 
+    <h3>В выходные и праздничные дни</h3>
+    <div class="table-wrap">
+        <table class="info-table">
+            <tr>
+                <th>День недели</th>
+                <th>Рабочие часы</th>
+            </tr>
+            <tr>
+                <td><strong>Суббота</strong></td>
+                <td align="center" rowspan="3">12<sup>00</sup> – 22<sup>00</sup></td>
+            </tr>
+            <tr>
+                <td><strong>Воскресенье</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Праздничные дни</strong></td>
+            </tr>
+        </table>
+    </div>
+
+
     <h3>В рабочие дни</h3>
     <div class="table-wrap">
         <table class="info-table">
@@ -37,7 +58,7 @@
         </table>
     </div>
 
-    <h3>Цены катка сезона 2024-2025</h3>
+    <h3>Цены катка сезона 2026-2027</h3>
     <div class="table-wrap">
         <table class="info-table">
             <tr>

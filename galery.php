@@ -6,16 +6,19 @@
 <!-- Слайдер для ПК (листается свайпом) -->
 <div id="home-display" class="stepcarousel">
     <div class="slides clearfix">
+        <div class="slide"><img src="slider/главн_katok.jpg" alt="Каток на Запсибе" /></div>
+        <div class="slide"><img src="slider/30_katok.jpg" alt="Каток на Запсибе" /></div>
+        <div class="slide"><img src="slider/31_katok.jpg" alt="Каток на Запсибе" /></div>
+        <div class="slide"><img src="slider/32_katok.jpg" alt="Каток на Запсибе" /></div>
         <div class="slide"><img src="slider/12_katok.jpg" alt="Каток на Запсибе" /></div>
         <div class="slide"><img src="slider/13_katok.jpg" alt="Каток на Запсибе" /></div>
         <div class="slide"><img src="slider/17_katok.jpg" alt="Каток на Запсибе" /></div>
         <div class="slide"><img src="slider/19_katok.jpg" alt="Каток на Запсибе" /></div>
-        <div class="slide"><img src="slider/16_katok.jpg" alt="Каток на Запсибе" /></div>
         <div class="slide"><img src="slider/1_katok.jpg" alt="Каток на Запсибе" /></div>
         <div class="slide"><img src="slider/2_katok.jpg" alt="Каток на Запсибе" /></div>
         <div class="slide"><img src="slider/24_katok.jpg" alt="Каток на Запсибе" /></div>
-        </div>   
-    </div>       
+    </div>
+</div>       
         
  
 <!-- Мобильная галерея (вместо слайдера) -->
